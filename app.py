@@ -3,6 +3,7 @@ from redis import Redis, RedisError
 import os
 import socket
 import pickledb
+from urllib.parse import quote
 
 # Connect to Redis
 redis = Redis(host="redis", port=6379,

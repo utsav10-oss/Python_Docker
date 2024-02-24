@@ -16,6 +16,7 @@ EXPOSE 8080
 
 # Install requirements
 # and change file ownership
+RUN pip install Werkzeug
 RUN pip install -r requirements.txt
 
 # Run app.py when the container launches
